@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <title>რუმის ჩეთი</title>
+  </head>
+  <body>
+    <h1>რუმის ჩეთი</h1>
+
+    <div id="joinRoom">
+      <input type="text" id="email" placeholder="შეიყვანეთ იმეილი" />
+      <input type="text" id="roomId" placeholder="შეიყვანეთ რუმის ID" />
+      <button id="joinBtn">შესვლა</button>
+    </div>
+
+    <div id="chatRoom" style="display: none">
+      <input type="text" id="roomInput" placeholder="შეიყვანეთ მესიჯი" />
+      <ul id="roomMessages"></ul>
+    </div>
+
+    <a href="/">go to chat</a>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
